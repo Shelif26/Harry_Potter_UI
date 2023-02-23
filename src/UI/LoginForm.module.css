@@ -1,0 +1,64 @@
+.Mdiv {
+  width:100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.formdiv {
+  /* background-color: rgba(255, 255, 255, 0.119); */
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titlecard {
+  width: 30%;
+  margin-bottom: 5%;
+}
+.formbutton {
+  margin-top: 2%;
+  width: 10rem;
+  padding: 0.5rem;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+  background-color: #ffa31a;
+}
+.formbutton span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.formbutton span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.formbutton:hover span{
+  padding-right: 25px;
+}
+.formbutton:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+label {
+  color:black;
+  font-weight: 700;
+}
+.inputbox {
+  background: transparent;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius:5px;
+  color:white;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
